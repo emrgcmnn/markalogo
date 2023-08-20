@@ -23,7 +23,7 @@ const UnderMenu = () =>  {
                     <h2 className='ea800 m-1'>EŞSİZ LOGO</h2>
                 </div>
                
-                <h1 className='ea700 m-5'>Hayalinizdeki Benzersiz Logonun Sahibi Olmak Artık Çok Kolay</h1>
+                <h1 className='ea700 m-5'>Hayalinizdeki Benzersiz Logonun Sahibi Olmak Artık Çok Daha Kolay</h1>
                 
                 <button className="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-xl m-3">
                 HADİ BAŞLAYALIM
