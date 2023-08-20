@@ -12,7 +12,7 @@ const UnderMenu = () =>  {
     return (
         
     
-        <div className='w-full h-auto bg-black md:flex justify-center items-center m-1 border rounded-xl'>
+        <div className='w-auto h-auto bg-black md:flex justify-center items-center mt-2 mb-12 mx-6 shadow-2xl border rounded-xl'>
             <div className="md:w-3/4 md:p-8 p-6">
             <ImageGallery />
             </div>

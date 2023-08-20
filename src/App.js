@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from '../src/Components/Navbar';
 import UnderMenu from './Components/UnderMenu';
+import NasilSiparis from './Components/NasilSiparis'
 import { Routes, Route,Switch , Link, NavLink } from 'react-router-dom';
 
 import BizKimiz from '../src/pages/BizKimiz'
@@ -15,7 +16,9 @@ function App() {
         <Navbar />  
         <UnderMenu />     
         
-        
+        <hr className=' border-teal-900'/>
+
+        <NasilSiparis /> 
       
         {/* <Routes>
           <Route path="/" element = {
