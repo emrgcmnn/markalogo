@@ -5,7 +5,7 @@ export default function BizKimiz () {
   return (
     <>
         <div>emre göçmenin denemsi</div>
-        <div>who am ı</div>
+        <div>who am ıssdasd</div>
     </>
   )
 }
