@@ -21,7 +21,7 @@ const Urunler = () =>  {
                 </div>
                 <div className="ml-4">
                     <h2 class="text-lg font-semibold">Logo Paketi</h2>
-                    <p>Kurumsal Logo + Kartvizit paketinde %50 indirim fırsatı için hemen teklifini al fırsatı kaçırma.</p>
+                    <p className='pr-8'>Kurumsal Logo + Kartvizit paketinde %50 indirim fırsatı için hemen teklifini al fırsatı kaçırma.</p>
                 </div>
             </div>
 
@@ -31,7 +31,7 @@ const Urunler = () =>  {
                 </div>
                 <div className="ml-4">
                     <h2 class="text-lg font-semibold">WebSitesi Paketi</h2>
-                    <p>Websitesi + Kurumsal Logo paketinde %60 indirim için hemen teklifini al fırsatı kaçırma.</p>
+                    <p className='pr-8'> Websitesi + Kurumsal Logo paketinde %60 indirim için hemen teklifini al fırsatı kaçırma.</p>
                 </div>
             </div>
 
