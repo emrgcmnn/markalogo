@@ -1,0 +1,21 @@
+.ea900 {
+    color: white;
+    font-weight: 900;
+}
+
+.ea800 {
+    color: white;
+    font-weight: 800;
+}
+
+.ea700 {
+    color: white;
+    font-weight: 600;
+}
+
+.ortala {
+    display: flex;
+    justify-content: center; /* Yatay (x ekseni) ortalama */
+    align-items: center; /* Dikey (y ekseni) ortalama */
+    height: 100vh; /* Sayfa yüksekliği kadar alan kapla */
+  }
