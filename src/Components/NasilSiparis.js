@@ -18,7 +18,7 @@ const NasilSiparis = () =>  {
       
     return (
         <>
-    <div className='md:mx-24 md:mt-12 mx-6 mt-12'>
+    <div name="yontem" id="yontem" className='md:mx-24 md:mt-12 mx-6 mt-12'>
         <div class="text-center mb-8">
             <h1 class="text-2xl font-bold">Nasıl Sipariş Veririm?</h1>
         </div>

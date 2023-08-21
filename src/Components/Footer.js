@@ -14,7 +14,7 @@ const Footer = () =>  {
       
     return (
      
-        <div class="text-center">
+        <div name="footer" id="footer" class="text-center">
         <h1 class="text-3xl font-bold m-4">İLETİŞİM</h1>
         
         <div class="flex justify-center">

@@ -10,7 +10,7 @@ import Kamiki from '../svg/kamiki.svg'
 const Urunler = () =>  {  
       
     return (
-<body class="bg-gray-100 p-3">
+<body name="kampanyalar" id="kampanyalar" class="bg-gray-100 p-3">
     <div class="p-6  m-6 md:p-12">
         <h1 class="text-2xl font-bold text-center pb-6 md:pb-12 ">KAMPANYALAR</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center mb-8">
