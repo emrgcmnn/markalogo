@@ -10,8 +10,8 @@ import Kamiki from '../svg/kamiki.svg'
 const Urunler = () =>  {  
       
     return (
-<body class="bg-gray-100">
-    <div class="p-6 md:p-12">
+<body class="bg-gray-100 p-3">
+    <div class="p-6  m-6 md:p-12">
         <h1 class="text-2xl font-bold text-center pb-6 md:pb-12 ">KAMPANYALAR</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center mb-8">
             
@@ -38,9 +38,9 @@ const Urunler = () =>  {
            
         </div>
 
-        <div class="flex justify-center items-center bg-gradient-to-b from-indigo-950 to-black border rounded-xl m-6 p-6">
+        <div class="flex justify-center items-center bg-gradient-to-b from-indigo-950 to-black border rounded-xl pb-6 ">
             <div class="text-center">
-                <h1 class="text-2xl font-bold mb-3 text-white">Hemen sipariş vermek için formu doldurun</h1>
+                <h1 class="ttext-lg font-semibold mb-3 text-white pt-6 pb-3">FORMU DOLDURUN VE HEMEN SİPARİŞ VERİN</h1>
                 <button class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-xl">SİPARİŞ OLUŞTUR</button>
             </div>
         </div>
