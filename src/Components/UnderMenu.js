@@ -12,12 +12,12 @@ const UnderMenu = () =>  {
     return (
         
     
-        <div className='w-auto h-auto bg-black md:flex justify-center items-center mt-2 mb-12 mx-6 shadow-2xl border rounded-xl'>
-            <div className="md:w-3/4 md:p-8 p-6">
-            <ImageGallery />
+        <div name="anasayfa" id="anasayfa" className='w-auto h-auto bg-black md:flex justify-center items-center mt-2 mb-12 mx-6 shadow-2xl border rounded-xl'>
+            <div className=" md:p-8 p-6 md:w-2/3">
+            <ImageGallery /> 
             </div>
         
-            <div className='text-center md:p-8 pb-6'>
+            <div className='text-center md:p-8 pb-6 md:w-1/3'>
                 <div >
                     <h1 class='ea900 m-1'>HAYLANİZDEKİ </h1>
                     <h2 className='ea800 m-1'>EŞSİZ LOGO</h2>

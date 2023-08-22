@@ -6,6 +6,9 @@ import React, { useState } from 'react'
 import '../Components/Navbar.css';
 
 import { NavLink } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll'; // react-scroll'den gerekli bileşenleri import edin
+
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -37,21 +40,136 @@ const Navbar = () => {
 
           <div>
             <div className='text-white font-medium md:flex hidden'>
-              <NavLink className='p-2 mx-1 hover:bg-slate-600 rounded-lg' to="/AnaSayfa">Ana Sayfa</NavLink>
-              <NavLink className='p-2 mx-1 hover:bg-slate-600 rounded-lg' to="/Urunler">Ürünler</NavLink>
-              <NavLink className='p-2 mx-1 hover:bg-slate-600 rounded-lg' to="/Iletisim">İletişim</NavLink>
-              <NavLink className='p-2 mx-1 hover:bg-slate-600 rounded-lg' to="/BizKimiz">Biz Kimiz</NavLink>
+           
+              <Link
+                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
+                activeClassName="font-medium"
+                to="anasayfa" // Footer bileşeninin "name" özelliği
+                spy={true}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('Ana Sayfa')}
+              >
+                Ana Sayfa
+              </Link>
+              
+              <Link
+                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
+                to="yontem" // Footer bileşeninin "name" özelliği
+                spy={true}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('Yöntem')}
+              >
+                Yöntem
+              </Link>
+              
+              <Link
+                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
+                to="bizkim" // Footer bileşeninin "name" özelliği
+                spy={true}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('Biz Kimiz')}
+              >
+                Biz Kimiz
+              </Link>
+
+              <Link
+                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
+                to="kampanyalar" // Footer bileşeninin "name" özelliği
+                spy={true}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('Kampanyalar')}
+              >
+                Kampanyalar
+              </Link>
+              
+              <Link
+                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
+                to="footer" // Footer bileşeninin "name" özelliği
+                spy={true}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('İletişim')}
+              >
+                İletişim
+              </Link>
             </div>
           </div>
 
           <div
             className={`md:hidden shadow-2xl right-0 bg-gradient-to-b from-indigo-950 to-black absolute rounded-b-lg w-auto h-min bottom-0 
-                    duration-300 ${open ? 'top-[55px]' : 'top-[-300%] '}`}
+                    duration-300 ${open ? 'top-[55px]' : 'top-[-500%] '}`}
             style={{ transition: 'top 0.3s ease-in-out' }}
           >
-            <NavLink onClick={handleLinkClick} to="/Urunler" className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full  ' >Ürünler</NavLink>
-            <NavLink onClick={handleLinkClick} to="/BizKimiz" className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '>Biz Kimiz</NavLink>
-            <NavLink onClick={handleLinkClick} to="/Iletisim" className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '>İletişim</NavLink>
+
+              <Link
+                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
+                to="anasayfa" // Footer bileşeninin "name" özelliği
+                spy={true}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('Ana Sayfa')}
+              >
+                Ana Sayfa
+              </Link>
+              
+              <Link
+                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
+                to="yontem" // Footer bileşeninin "name" özelliği
+                spy={true}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('Yöntem')}
+              >
+                Yöntem
+              </Link>
+              
+              <Link
+                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
+                to="bizkim" // Footer bileşeninin "name" özelliği
+                spy={true}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('Biz Kimiz')}
+              >
+                Biz Kimiz
+              </Link>
+
+              <Link
+                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
+                to="kampanyalar" // Footer bileşeninin "name" özelliği
+                spy={true}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('Kampanyalar')}
+              >
+                Kampanyalar
+              </Link>
+              
+              <Link
+                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
+                to="footer" // Footer bileşeninin "name" özelliği
+                spy={false}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('İletişim')}
+              >
+                İletişim
+              </Link>
+          
           </div>
         </div>
       </nav>

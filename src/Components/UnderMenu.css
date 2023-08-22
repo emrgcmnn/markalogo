@@ -19,3 +19,7 @@
     align-items: center; /* Dikey (y ekseni) ortalama */
     height: 100vh; /* Sayfa yüksekliği kadar alan kapla */
   }
+
+  .carousel .carousel-slider .control-dots {
+    display: none;
+  }

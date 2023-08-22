@@ -9,9 +9,9 @@ import React, { useState , useEffect, useRef} from 'react'
 const Bizkimiz = () =>  {  
       
     return (
-        <div class="bg-white md:mx-24 md:mt-12 mx-6 mt-12 p-8 rounded-lg shadow-md border border-gray-300">
+        <div  class="bg-white md:mx-24 md:mt-12 mx-6 mt-12 p-8 rounded-lg shadow-md border border-gray-300">
         <div class="mb-8">
-            <h1 class="text-3xl font-bold text-black border-b-2 border-black pb-2">
+            <h1 name="bizkim" id="bizkim" class="text-3xl font-bold text-black border-b-2 border-black pb-2">
                 Hakkımızda
             </h1>
             <p class="mt-4 text-gray-700">
