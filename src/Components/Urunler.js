@@ -15,7 +15,7 @@ const Urunler = () =>  {
         <h1 class="text-2xl font-bold text-center pb-6 md:pb-12 ">KAMPANYALAR</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center mb-8">
             
-            <div class="bg-gradient-to-r from-indigo-300 to-sky-200 rounded-lg shadow-md flex p-4 m-2">
+            <div class="bg-gradient-to-r from-sky-300 to-teal-300 rounded-lg shadow-md flex p-4 m-2">
                 <div className="w-1/4 flex items-center">
                     <img src={Kambir} alt="Logo" />
                 </div>
