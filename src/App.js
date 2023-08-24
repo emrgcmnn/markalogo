@@ -5,6 +5,7 @@ import NasilSiparis from './Components/NasilSiparis'
 import Bizkimiz from './Components/BizKimiz'
 import Footer from './Components/Footer'
 import Kampanyalar from './Components/Urunler'
+import Form from './Components/Form'
 import { Routes, Route,Switch , Link, NavLink } from 'react-router-dom';
 
 import BizKimiz from '../src/pages/BizKimiz'
@@ -32,9 +33,8 @@ function App() {
         <Bizkimiz /> 
 
         <hr className=' border-teal-900 mt-12'/>
-        
+        <Form/>
 
-        <Footer /> 
 
 
       

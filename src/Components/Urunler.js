@@ -34,7 +34,6 @@ const Urunler = () =>  {
                     <p className='pr-8'> Websitesi + Kurumsal Logo paketinde %60 indirim için hemen teklifini al fırsatı kaçırma.</p>
                 </div>
             </div>
-
            
         </div>
 
