@@ -16,9 +16,27 @@ const Form = () => {
     message: '',
   });
 
+  const [formErrors, setFormErrors] = useState({
+    firstName: false,
+    lastName: false,
+    email: false,
+    phone: false,
+    company: false,
+  });
+
   const [showPopup, setShowPopup] = useState(false); 
   const handleSubmitForm = (e) => {
     e.preventDefault();
+    if (
+      formData.firstName === '' ||
+      formData.lastName === '' ||
+      formData.email === '' ||
+      formData.phone === '' ||
+      formData.company === ''
+    ) {
+      alert('Lütfen zorunlu alanları doldurun.');
+      return;
+    }
     console.log(formData);
     // Burada kendi form işleme kodlarınızı ekleyebilirsiniz.
     setShowPopup(true); // Popup'ı göster
@@ -26,7 +44,7 @@ const Form = () => {
     setTimeout(() => {
         setShowPopup(false);
         window.location.reload(); // Sayfayı yeniden yükle
-      }, 2000); // 2 saniye beklet
+      }, 1000); // 2 saniye beklet
   };
 
   const handleChange = (e) => {
@@ -36,6 +54,8 @@ const Form = () => {
       [name]: value,
     }));
   };
+
+
 
 
   const [state, handleSubmit] = useForm("mwkdorqy");
@@ -63,7 +83,9 @@ const Form = () => {
       placeholder="Adınız"
       value={formData.firstName}
       onChange={handleChange}
-      className="p-2 border rounded w-full"
+      className={`p-2 border rounded w-full ${
+        formErrors.firstName ? "border-red-500" : ""
+      }`}
     />
     <input
       type="text"
@@ -71,7 +93,9 @@ const Form = () => {
       placeholder="Soyadınız"
       value={formData.lastName}
       onChange={handleChange}
-      className="p-2 border rounded w-full"
+      className={`p-2 border rounded w-full ${
+        formErrors.lastName ? "border-red-500" : ""
+      }`}
     />
   </div>
   <input
@@ -80,24 +104,27 @@ const Form = () => {
     placeholder="E-posta"
     value={formData.email}
     onChange={handleChange}
-    className="p-2 border rounded w-full"
-  />
+    className={`p-2 border rounded w-full ${
+      formErrors.email ? "border-red-500" : ""
+    }`}  />
   <input
     type="text"
     name="phone"
     placeholder="Telefon Numaranız"
     value={formData.phone}
     onChange={handleChange}
-    className="p-2 border rounded w-full"
-  />
+    className={`p-2 border rounded w-full ${
+      formErrors.phone ? "border-red-500" : ""
+    }`}  />
   <input
     type="text"
     name="company"
     placeholder="Şirket İsmi"
     value={formData.company}
     onChange={handleChange}
-    className="p-2 border rounded w-full"
-  />
+    className={`p-2 border rounded w-full ${
+      formErrors.company ? "border-red-500" : ""
+    }`}  />
   <div>
     <label className="block font-bold mb-1">Kampanya Türü:</label>
     <select
