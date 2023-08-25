@@ -1,9 +1,9 @@
-import React, { useState , useEffect, useRef} from 'react'
-import Facesvg from '../svg/face.svg'
-import Twitsvg from '../svg/tw.svg'
-import Whatsappsvg from '../svg/wa.svg'
-import Inssvg from '../svg/ins.svg'
-
+import React, { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+import Facesvg from '../svg/face.svg';
+import Twitsvg from '../svg/tw.svg';
+import Whatsappsvg from '../svg/wa.svg';
+import Inssvg from '../svg/ins.svg';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -24,88 +24,101 @@ const Form = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const [state, handleSubmit] = useForm("mwkdorqy");
+
+  const handleSubmitForm = (e) => {
     e.preventDefault();
     console.log(formData);
-    // Burada form verilerini işleme kodlarını ekleyebilirsiniz.
+    // Burada kendi form işleme kodlarınızı ekleyebilirsiniz.
   };
+
+
 
   return (
     <div className="bg-gray-100 min-h-screen justify-center items-center p-12">
         <div className="p-8">
       <h2 className="text-2xl font-bold mb-4">Sipariş Formu</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
-          <input
-            type="text"
-            name="firstName"
-            placeholder="Adınız"
-            value={formData.firstName}
-            onChange={handleChange}
-            className="p-2 border rounded w-full"
-          />
-          <input
-            type="text"
-            name="lastName"
-            placeholder="Soyadınız"
-            value={formData.lastName}
-            onChange={handleChange}
-            className="p-2 border rounded w-full"
-          />
-        </div>
-        <input
-          type="email"
-          name="email"
-          placeholder="E-posta"
-          value={formData.email}
-          onChange={handleChange}
-          className="p-2 border rounded w-full"
-        />
-        <input
-          type="text"
-          name="phone"
-          placeholder="Telefon Numaranız"
-          value={formData.phone}
-          onChange={handleChange}
-          className="p-2 border rounded w-full"
-        />
-        <input
-          type="text"
-          name="company"
-          placeholder="Şirket İsmi"
-          value={formData.company}
-          onChange={handleChange}
-          className="p-2 border rounded w-full"
-        />
-        <div>
-          <label className="block font-bold mb-1">Kampanya Türü:</label>
-          <select
-            name="campaign"
-            value={formData.campaign}
-            onChange={handleChange}
-            className="p-2 border rounded w-full"
-          >
-            <option value="">Seçiniz</option>
-            <option value="logo">Logo Kampanyası</option>
-            <option value="website">Web Sitesi Kampanyası</option>
-          </select>
-        </div>
-        <div>
-          <label className="block font-bold mb-1">Siparişinizle Alakalı Ek Bilgiler:</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            className="p-2 border rounded w-full"
-          />
-        </div>
-        <button
-          type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-        >
-          Gönder
-        </button>
-      </form>
+      <form
+  onSubmit={(e) => {
+    handleSubmit(e);
+    handleSubmitForm(e);
+  }}
+  action="https://formspree.io/f/mwkdorqy"
+  method="POST"
+  className="space-y-4"
+>
+  <div className="grid grid-cols-2 gap-4">
+    <input
+      type="text"
+      name="firstName"
+      placeholder="Adınız"
+      value={formData.firstName}
+      onChange={handleChange}
+      className="p-2 border rounded w-full"
+    />
+    <input
+      type="text"
+      name="lastName"
+      placeholder="Soyadınız"
+      value={formData.lastName}
+      onChange={handleChange}
+      className="p-2 border rounded w-full"
+    />
+  </div>
+  <input
+    type="email"
+    name="email"
+    placeholder="E-posta"
+    value={formData.email}
+    onChange={handleChange}
+    className="p-2 border rounded w-full"
+  />
+  <input
+    type="text"
+    name="phone"
+    placeholder="Telefon Numaranız"
+    value={formData.phone}
+    onChange={handleChange}
+    className="p-2 border rounded w-full"
+  />
+  <input
+    type="text"
+    name="company"
+    placeholder="Şirket İsmi"
+    value={formData.company}
+    onChange={handleChange}
+    className="p-2 border rounded w-full"
+  />
+  <div>
+    <label className="block font-bold mb-1">Kampanya Türü:</label>
+    <select
+      name="campaign"
+      value={formData.campaign}
+      onChange={handleChange}
+      className="p-2 border rounded w-full"
+    >
+      <option value="">Seçiniz</option>
+      <option value="logo">Logo Kampanyası</option>
+      <option value="website">Web Sitesi Kampanyası</option>
+    </select>
+  </div>
+  <div>
+    <label className="block font-bold mb-1">Siparişinizle Alakalı Ek Bilgiler:</label>
+    <textarea
+      name="message"
+      value={formData.message}
+      onChange={handleChange}
+      className="p-2 border rounded w-full"
+    />
+  </div>
+  <button
+    type="submit"
+    disabled={state.submitting}
+    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+  >
+    Gönder
+  </button>
+</form>
     </div>
     <div name="footer" id="footer" class="text-center py-4">
         <h1 class="text-3xl font-bold mb-4">İLETİŞİM</h1>
