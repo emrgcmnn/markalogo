@@ -135,29 +135,29 @@ const Form = () => {
         
         <div class="flex justify-center">
             
-            <div class="w-1/4 text-center">
+            <a target="_blank" href='https://www.facebook.com' class="w-1/4 text-center">
                 <button>
                     <img src={Facesvg} alt="Facebook" class="mx-auto mb-2 w-8 h-8"/>
                 </button>
-            </div>
+            </a>
 
-            <div class="w-1/4 text-center">
+            <a target="_blank" href='https://www.twitter.com' class="w-1/4 text-center">
                 <button>
                     <img src={Twitsvg} alt="Twitter" class="mx-auto mb-2 w-8 h-8"/>
                 </button>
-            </div>
+            </a>
             
-            <div class="w-1/4 text-center">
-                <button>
+            <a target="_blank" href='https://wa.me/<+905318471853>' class="w-1/4 text-center">
+                <button >
                     <img src={Whatsappsvg} alt="WhatsApp" class="mx-auto mb-2 w-8 h-8"/>
                 </button>
-            </div>
+            </a>
             
-            <div class="w-1/4 text-center">
+            <a target="_blank" href='https://www.instagram.com/markalogoo' class="w-1/4 text-center">
                 <button>
                     <img src={Inssvg} alt="Instagram" class="mx-auto mb-2 w-8 h-8"/>
                 </button>
-            </div>
+            </a>
         </div>
     </div>
     </div>
