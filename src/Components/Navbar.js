@@ -65,18 +65,6 @@ const Navbar = () => {
               >
                 Yöntem
               </Link>
-              
-              <Link
-                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
-                to="bizkim" // Footer bileşeninin "name" özelliği
-                spy={true}
-                smooth={true}
-                offset={-70} // Navbar yüksekliği kadar kaydırma
-                duration={800}
-                onClick={() => handleLinkClick('Biz Kimiz')}
-              >
-                Biz Kimiz
-              </Link>
 
               <Link
                 className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
@@ -88,6 +76,19 @@ const Navbar = () => {
                 onClick={() => handleLinkClick('Kampanyalar')}
               >
                 Kampanyalar
+              </Link>
+
+              
+              <Link
+                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
+                to="bizkim" // Footer bileşeninin "name" özelliği
+                spy={true}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('Biz Kimiz')}
+              >
+                Biz Kimiz
               </Link>
               
               <Link
@@ -134,17 +135,7 @@ const Navbar = () => {
                 Yöntem
               </Link>
               
-              <Link
-                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
-                to="bizkim" // Footer bileşeninin "name" özelliği
-                spy={true}
-                smooth={true}
-                offset={-70} // Navbar yüksekliği kadar kaydırma
-                duration={800}
-                onClick={() => handleLinkClick('Biz Kimiz')}
-              >
-                Biz Kimiz
-              </Link>
+            
 
               <Link
                 className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
@@ -156,6 +147,18 @@ const Navbar = () => {
                 onClick={() => handleLinkClick('Kampanyalar')}
               >
                 Kampanyalar
+              </Link>
+
+              <Link
+                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
+                to="bizkim" // Footer bileşeninin "name" özelliği
+                spy={true}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('Biz Kimiz')}
+              >
+                Biz Kimiz
               </Link>
               
               <Link

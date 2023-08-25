@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Facesvg from '../svg/face.svg';
 import Twitsvg from '../svg/tw.svg';
@@ -16,6 +16,19 @@ const Form = () => {
     message: '',
   });
 
+  const [showPopup, setShowPopup] = useState(false); 
+  const handleSubmitForm = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    // Burada kendi form işleme kodlarınızı ekleyebilirsiniz.
+    setShowPopup(true); // Popup'ı göster
+    alert("SİPARİŞİNİZ BAŞARIYLA OLUŞTURULDU. TARAFINIZA EN GEÇ 15 DK. İÇİNDE GERİ DÖNÜŞ SAĞLANICAKTIR"); // Alert göster
+    setTimeout(() => {
+        setShowPopup(false);
+        window.location.reload(); // Sayfayı yeniden yükle
+      }, 2000); // 2 saniye beklet
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -24,13 +37,9 @@ const Form = () => {
     }));
   };
 
+
   const [state, handleSubmit] = useForm("mwkdorqy");
 
-  const handleSubmitForm = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    // Burada kendi form işleme kodlarınızı ekleyebilirsiniz.
-  };
 
 
 
@@ -118,6 +127,7 @@ const Form = () => {
   >
     Gönder
   </button>
+
 </form>
     </div>
     <div name="footer" id="footer" class="text-center py-4">

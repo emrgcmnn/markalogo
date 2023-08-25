@@ -2,12 +2,16 @@
 import React, { useState , useEffect, useRef} from 'react'
 import UnderMenuCss from '../Components/UnderMenu.css'
 import ImageGallery from './ImageGalery';
-
+import { Link, animateScroll as scroll } from 'react-scroll'; 
 
 
 
 
 const UnderMenu = () =>  {  
+
+  const [open, setOpen] = useState(false);
+    const handleLinkClick = () => {
+        setOpen(false);};
       
     return (
         
@@ -25,9 +29,21 @@ const UnderMenu = () =>  {
                
                 <h1 className='ea700 m-5'>Hayalinizdeki Benzersiz Logonun Sahibi Olmak Artık Çok Daha Kolay</h1>
                 
-                <button className="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-xl m-3">
-                HADİ BAŞLAYALIM
+
+                <Link
+                to="footer" // Footer bileşeninin "name" özelliği
+                spy={false}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('İletişim')}
+              >
+                     <button className="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-xl m-3
+                ">
+                SİPARİŞ OLUŞTUR
                 </button>
+              </Link>
+           
 
             </div>
         </div>

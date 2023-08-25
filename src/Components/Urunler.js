@@ -2,12 +2,15 @@
 import React, { useState , useEffect, useRef} from 'react'
 import Kambir from '../svg/kambir.svg'
 import Kamiki from '../svg/kamiki.svg'
-
+import { Link, animateScroll as scroll } from 'react-scroll'; 
 
 
 
 
 const Urunler = () =>  {  
+    const [open, setOpen] = useState(false);
+    const handleLinkClick = () => {
+        setOpen(false);};
       
     return (
 <body name="kampanyalar" id="kampanyalar" class="bg-gray-100 p-3">
@@ -40,7 +43,19 @@ const Urunler = () =>  {
         <div class="flex justify-center items-center bg-gradient-to-b from-indigo-950 to-black border rounded-xl pb-6 ">
             <div class="text-center">
                 <h1 class="ttext-lg font-semibold mb-3 text-white pt-6 pb-3">FORMU DOLDURUN VE HEMEN SİPARİŞ VERİN</h1>
-                <button class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-xl">SİPARİŞ OLUŞTUR</button>
+                <Link
+                to="footer" // Footer bileşeninin "name" özelliği
+                spy={false}
+                smooth={true}
+                offset={-70} // Navbar yüksekliği kadar kaydırma
+                duration={800}
+                onClick={() => handleLinkClick('İletişim')}
+              >
+                     <button className="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-xl m-3
+                ">
+                SİPARİŞ OLUŞTUR
+                </button>
+              </Link>
             </div>
         </div>
     </div>
