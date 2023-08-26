@@ -79,22 +79,22 @@ const Form = () => {
   <div className="grid grid-cols-2 gap-4">
     <input
       type="text"
-      name="firstName"
+      name="isim"
       placeholder="Adınız"
-      value={formData.firstName}
+      value={formData.isim}
       onChange={handleChange}
       className={`p-2 border rounded w-full ${
-        formErrors.firstName ? "border-red-500" : ""
+        formErrors.isim ? "border-red-500" : ""
       }`}
     />
     <input
       type="text"
-      name="lastName"
+      name="soyisim"
       placeholder="Soyadınız"
-      value={formData.lastName}
+      value={formData.soyisim}
       onChange={handleChange}
       className={`p-2 border rounded w-full ${
-        formErrors.lastName ? "border-red-500" : ""
+        formErrors.soyisim ? "border-red-500" : ""
       }`}
     />
   </div>
@@ -109,27 +109,27 @@ const Form = () => {
     }`}  />
   <input
     type="text"
-    name="phone"
+    name="telefon"
     placeholder="Telefon Numaranız"
-    value={formData.phone}
+    value={formData.telefon}
     onChange={handleChange}
     className={`p-2 border rounded w-full ${
-      formErrors.phone ? "border-red-500" : ""
+      formErrors.telefon ? "border-red-500" : ""
     }`}  />
   <input
     type="text"
-    name="company"
+    name="firmaAdı"
     placeholder="Şirket İsmi"
-    value={formData.company}
+    value={formData.firmaAdı}
     onChange={handleChange}
     className={`p-2 border rounded w-full ${
-      formErrors.company ? "border-red-500" : ""
+      formErrors.firmaAdı ? "border-red-500" : ""
     }`}  />
   <div>
     <label className="block font-bold mb-1">Kampanya Türü:</label>
     <select
-      name="campaign"
-      value={formData.campaign}
+      name="kampanya"
+      value={formData.kampanya}
       onChange={handleChange}
       className="p-2 border rounded w-full"
     >
@@ -141,8 +141,8 @@ const Form = () => {
   <div>
     <label className="block font-bold mb-1">Siparişinizle Alakalı Ek Bilgiler:</label>
     <textarea
-      name="message"
-      value={formData.message}
+      name="extrabilgi"
+      value={formData.extrabilgi}
       onChange={handleChange}
       className="p-2 border rounded w-full"
     />
