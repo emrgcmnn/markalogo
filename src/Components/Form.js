@@ -162,18 +162,7 @@ const Form = () => {
         
         <div class="flex justify-center">
             
-            <a target="_blank" href='https://www.facebook.com' class="w-1/4 text-center">
-                <button>
-                    <img src={Facesvg} alt="Facebook" class="mx-auto mb-2 w-8 h-8"/>
-                </button>
-            </a>
-
-            <a target="_blank" href='https://www.twitter.com' class="w-1/4 text-center">
-                <button>
-                    <img src={Twitsvg} alt="Twitter" class="mx-auto mb-2 w-8 h-8"/>
-                </button>
-            </a>
-            
+        
             <a target="_blank" href='https://wa.me/<+905318471853>' class="w-1/4 text-center">
                 <button >
                     <img src={Whatsappsvg} alt="WhatsApp" class="mx-auto mb-2 w-8 h-8"/>
