@@ -16,7 +16,7 @@ const UnderMenu = () =>  {
     return (
         
     
-        <div name="anasayfa" id="anasayfa" className='w-auto h-auto bg-black md:flex justify-center items-center mt-2 mb-12 mx-6 shadow-2xl border rounded-xl'>
+        <div name="anasayfa" id="anasayfa" className='w-auto h-auto bg-gradient-to-b from-indigo-950 to-black md:flex justify-center items-center mt-2 mb-12 mx-6 shadow-2xl border rounded-xl'>
             <div className=" md:p-8 p-6 md:w-2/3">
             <ImageGallery /> 
             </div>
