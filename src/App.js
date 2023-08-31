@@ -17,12 +17,12 @@ function App() {
         <UnderMenu />     
         
         <hr className=' border-teal-900'/>
-
-        <NasilSiparis /> 
+       
+        <Kampanyalar /> 
 
         <hr className=' border-teal-900'/>
         
-        <Kampanyalar /> 
+        <NasilSiparis /> 
 
         <hr className=' border-teal-900 '/>
 

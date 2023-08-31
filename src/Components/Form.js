@@ -64,7 +64,9 @@ const Form = () => {
 
 
   return (
-    <div className="bg-gray-100 min-h-screen justify-center items-center p-12">
+    <div
+    name="form" id="form"
+    className="bg-gray-100 min-h-screen justify-center items-center p-12">
         <div className="p-8">
       <h2 className="text-2xl font-bold mb-4">Sipariş Formu</h2>
       <form
