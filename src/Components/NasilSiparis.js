@@ -1,4 +1,4 @@
-import React, { useState , useEffect, useRef} from 'react'
+import React from 'react'
 import Gosvg from '../svg/go.svg'
 import Formsvg from '../svg/form.svg'
 import Sendsvg from '../svg/send.svg'

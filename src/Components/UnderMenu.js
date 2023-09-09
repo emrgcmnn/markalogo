@@ -31,7 +31,7 @@ const UnderMenu = () =>  {
                 
 
                 <Link
-                to="footer" // Footer bileşeninin "name" özelliği
+                to="form" // Footer bileşeninin "name" özelliği
                 spy={false}
                 smooth={true}
                 offset={-70} // Navbar yüksekliği kadar kaydırma

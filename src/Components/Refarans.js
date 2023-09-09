@@ -1,4 +1,4 @@
-import React, { useState , useEffect, useRef} from 'react'
+import React from 'react'
 
 import AtesPilic from '../img/ates.jpeg'
 import AtesPilic2 from '../img/ates2.jpeg'

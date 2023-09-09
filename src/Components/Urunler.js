@@ -1,5 +1,5 @@
 
-import React, { useState , useEffect, useRef} from 'react'
+import React, { useState } from 'react'
 import Kambir from '../svg/kambir.svg'
 import Kamiki from '../svg/kamiki.svg'
 import { Link, animateScroll as scroll } from 'react-scroll'; 
@@ -44,7 +44,7 @@ const Urunler = () =>  {
             <div class="text-center">
                 <h1 class="ttext-lg font-semibold mb-3 text-white pt-6 pb-3">FORMU DOLDURUN VE HEMEN SİPARİŞ VERİN</h1>
                 <Link
-                to="footer" // Footer bileşeninin "name" özelliği
+                to="form" // Footer bileşeninin "name" özelliği
                 spy={false}
                 smooth={true}
                 offset={-70} // Navbar yüksekliği kadar kaydırma

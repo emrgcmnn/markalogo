@@ -1,5 +1,8 @@
 import LImage from '../img/LongLogo.png';
 import SImage from '../img/ShortLogo.png';
+import ContactMenu from './Contact';
+
+
 
 import Burger from '../svg/burgerMenu.svg'
 import React, { useState } from 'react'
@@ -91,17 +94,7 @@ const Navbar = () => {
                 Biz Kimiz
               </Link>
               
-              <Link
-                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
-                to="footer" // Footer bileşeninin "name" özelliği
-                spy={true}
-                smooth={true}
-                offset={-70} // Navbar yüksekliği kadar kaydırma
-                duration={800}
-                onClick={() => handleLinkClick('İletişim')}
-              >
-                İletişim
-              </Link>
+            
             </div>
           </div>
 
@@ -159,21 +152,15 @@ const Navbar = () => {
                 Biz Kimiz
               </Link>
               
-              <Link
-                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
-                to="form" // Footer bileşeninin "name" özelliği
-                spy={false}
-                smooth={true}
-                offset={-70} // Navbar yüksekliği kadar kaydırma
-                duration={800}
-                onClick={() => handleLinkClick('İletişim')}
-              >
-                İletişim
-              </Link>
+              
           
           </div>
         </div>
       </nav>
+
+    <div className="flex justify-center">
+      <ContactMenu />
+    </div>
     </>
   )
 }
