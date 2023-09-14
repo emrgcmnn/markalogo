@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className='text-white font-medium md:flex hidden'>
            
               <Link
-                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
+                className='p-2 mx-1 hover:bg-slate-600 rounded-lg hover:cursor-pointer'
                 activeClassName="font-medium"
                 to="anasayfa" // Footer bileşeninin "name" özelliği
                 spy={true}
@@ -58,7 +58,7 @@ const Navbar = () => {
               </Link>
 
               <Link
-                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
+                className='p-2 mx-1 hover:bg-slate-600 rounded-lg hover:cursor-pointer'
                 to="kampanyalar" // Footer bileşeninin "name" özelliği
                 spy={true}
                 smooth={true}
@@ -70,7 +70,7 @@ const Navbar = () => {
               </Link>
               
               <Link
-                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
+                className='p-2 mx-1 hover:bg-slate-600 rounded-lg hover:cursor-pointer'
                 to="yontem" // Footer bileşeninin "name" özelliği
                 spy={true}
                 smooth={true}
@@ -83,7 +83,7 @@ const Navbar = () => {
 
               
               <Link
-                className='p-2 mx-1 hover:bg-slate-600 rounded-lg'
+                className='p-2 mx-1 hover:bg-slate-600 rounded-lg hover:cursor-pointer'
                 to="bizkim" // Footer bileşeninin "name" özelliği
                 spy={true}
                 smooth={true}
@@ -105,7 +105,7 @@ const Navbar = () => {
           >
 
               <Link
-                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
+                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full hover:cursor-pointer'
                 to="anasayfa" // Footer bileşeninin "name" özelliği
                 spy={true}
                 smooth={true}
@@ -117,7 +117,7 @@ const Navbar = () => {
               </Link>
 
               <Link
-                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
+                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full hover:cursor-pointer'
                 to="kampanyalar" // Footer bileşeninin "name" özelliği
                 spy={true}
                 smooth={true}
@@ -129,7 +129,7 @@ const Navbar = () => {
               </Link>
               
               <Link
-                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
+                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full hover:cursor-pointer'
                 to="yontem" // Footer bileşeninin "name" özelliği
                 spy={true}
                 smooth={true}
@@ -141,7 +141,7 @@ const Navbar = () => {
               </Link>  
 
              <Link
-                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full '
+                className='block px-6 py-3 m-1 font-extrabold text-slate-200 hover:bg-slate-200 hover:text-gray-800 rounded-full hover:cursor-pointer'
                 to="bizkim" // Footer bileşeninin "name" özelliği
                 spy={true}
                 smooth={true}
