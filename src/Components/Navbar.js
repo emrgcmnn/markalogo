@@ -151,12 +151,9 @@ const Navbar = () => {
               >
                 Biz Kimiz
               </Link>
-              
-              
-          
-          </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <div className="flex justify-center">
       <ContactMenu />
