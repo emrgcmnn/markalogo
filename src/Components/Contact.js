@@ -19,7 +19,7 @@ function ContactMenu() {
           </button>
           <div className="flex flex-row space-x-2 bg-slate-100 bg- p-2 rounded-l-3xl shadow-lg absolute bottom-0 right-14"
                style={{ right: menuOpen ? '-200px' : '55px', transition: 'right 0.3s ease-in-out' }}>
-            <a target="_blank" href='https://wa.me/905549092598' className="text-center">
+            <a target="_blank" href='https://wa.me/905013348858' className="text-center">
               <button className="brounded-full p-1 w-10 h-10 flex items-center justify-center">
                 <img src={Whatsappsvg} alt="WhatsApp" className="w-10 h-10"/>
               </button>
