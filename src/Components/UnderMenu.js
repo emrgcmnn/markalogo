@@ -23,7 +23,6 @@ const UnderMenu = () =>  {
         
             <div className='text-center md:p-8 pb-6 md:w-1/3'>
                 <div >
-                    <h1 class='ea900 m-1'>HAYLANİZDEKİ </h1>
                     <h2 className='ea800 m-1'>EŞSİZ LOGO</h2>
                 </div>
                
