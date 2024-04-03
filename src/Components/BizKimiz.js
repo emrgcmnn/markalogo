@@ -15,6 +15,7 @@ const Bizkimiz = () =>  {
                 Hakkımızda
             </h1>
             <p class="mt-4 text-gray-700">
+                ENGİN ENGİN
                 MarkaLogo, 2015 yılından beri kişisel markalaşmanın gücünü ön planda tutarak, logo tasarımı, kartvizit
                 tasarımı, kişisel web sitesi oluşturma ve sosyal medya yönetimi gibi alanlarda faaliyet göstermektedir.
                 Biz, markanızı yansıtan özgün ve etkileyici tasarımlarla dijital dünyada varlık göstermenize yardımcı
