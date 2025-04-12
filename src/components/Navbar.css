@@ -7,7 +7,7 @@
     justify-content: space-between;
     padding: 0 10%; /* sağdan ve soldan %5 boşluk */
     position: relative;
-    z-index: 10;
+    z-index: 100;
   }
   
   /* Logo */
