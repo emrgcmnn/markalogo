@@ -1,0 +1,100 @@
+/* Home.css */
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Sayfa yüksekliği %100 */
+  background-color: #000; /* Arka plan siyah */
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Yatayda ortalama */
+}
+
+.video-gallery {
+  width: 100%;
+  height: auto; /* Yüksekliği video boyutlarına göre ayarlanacak */
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%; /* Kaydırılabilir alanın genişliği */
+  height: auto; /* Yükseklik, video oranına göre ayarlanacak */
+}
+
+.gallery-video {
+  width: 100vw; /* Video genişliği %100 */
+  height: calc(100vw * 9 / 16); /* 16:9 oranında yükseklik hesaplanacak */
+  object-fit: cover; /* Video orantılı şekilde doldurulacak */
+  flex-shrink: 0; /* Video boyutunun bozulmaması için */
+}
+
+.profile-card {
+  position: absolute;
+  top: 20px; /* Profil kartı yukarıdan başlasın */
+  left: 50%;
+  transform: translateX(-50%); /* Yatayda ortalama */
+  text-align: center;
+  z-index: 10;
+  color: #fff;
+  padding: 20px;
+  max-width: 90%; /* Genişliği sınırlayarak görünürlüğü artırdık */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* İçerik arasına boşluk ekledik */
+}
+
+.image-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 50px;
+  margin-top: 0;
+  color: #ffffff; /* Beyaz metin rengi */
+}
+
+.title {
+  font-size: 20px;
+  color: #fff; /* Beyaz metin rengi */
+}
+
+/* Mobil görünümde düzenlemeler */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 100%;
+    justify-content: center;
+    flex-direction: row; /* Fotoğraf solda, bilgiler sağda */
+    text-align: left;
+  }
+
+  .image-section {
+    margin-right: 20px; /* Fotoğraf ile metin arasına boşluk */
+  }
+
+  .profile-image {
+    width: 70px; /* Mobilde profil resmi daha küçük */
+    height: 70px;
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: 800; /* Ad kısmı mobilde küçülecek */
+  }
+
+  .title {
+    font-size: 10px; /* Başlık kısmı mobilde küçülecek */
+    font-weight: 700; 
+  }
+}

@@ -1,0 +1,68 @@
+.navbar {
+    height: 60px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%; /* sağdan ve soldan %5 boşluk */
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Logo */
+  .navbar-logo .logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  /* Linkler */
+  .navbar-links {
+    display: flex;
+    gap: 40px; /* Linkler arasındaki boşluğu artırdık */
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700; /* Yazı tipi kalınlaştırıldı */
+    font-size: 18px; /* Font boyutunu biraz büyütebiliriz */
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Hamburger */
+  .navbar-hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar-links {
+      position: absolute;
+      top: 55px;
+      left: 0;
+      right: 0;
+      background-color: #111;
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem 0;
+      display: none;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  
+    .navbar-hamburger {
+      display: block;
+    }
+  }
+  
